@@ -10,13 +10,13 @@ function setup() {
     dataPoint.push(0.5);
   }
 
-  background(0);
+  background(50, 55, 100);
 }
 
 function draw() {
   dataPoint[dataPoint.length - 1] = random();
-  background(0);
-  stroke(1);
+  background(50, 55, 100);
+  noStroke();
   fill(0, 130, 164);
 
   for (let i = 0; i < dataPoint.length; i++) {
@@ -35,8 +35,14 @@ function draw() {
       actRandomSeed = random(100000);
     };
   }
-  stroke(0);
-  noFill();
+  fill(255, 250, 0);
+  ellipseMode(RADIUS);
+
+  ellipse(700, 70, 50, 50);
+  ellipseMode(CENTER);
+  fill(255, 200, 0);
+  ellipse(700, 70, 55, 55);
+  noStroke();
 
   randomSeed(actRandomSeed);
   beginShape();
