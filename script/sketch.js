@@ -6,7 +6,7 @@ function setup() {
 
   frameRate(8);
 
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 100; i++) {
     dataPoint.push(0.5);
   }
 
@@ -22,7 +22,7 @@ function draw() {
   for (let i = 0; i < dataPoint.length; i++) {
     const x = (width / (dataPoint.length + 1)) * (i + 1);
     const y = map(dataPoint[i], 0, 1, height, 0);
-    ellipse(x, y, 10);
+    ellipse(x, y, 8);
   }
   for (let i = 0; i < dataPoint.length - 1; i++) {
     dataPoint[i] = dataPoint[i + 1];
