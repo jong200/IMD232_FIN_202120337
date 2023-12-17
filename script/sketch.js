@@ -4,7 +4,7 @@ let actRandomSeed = 8;
 function setup() {
   setCanvasContainer('canvas', 3, 2, true);
 
-  frameRate(5);
+  frameRate(8);
 
   for (let i = 0; i < 50; i++) {
     dataPoint.push(0.5);
