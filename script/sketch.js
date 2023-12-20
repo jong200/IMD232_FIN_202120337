@@ -47,7 +47,10 @@ function draw() {
   ellipse(700, 70, 55, 55);
   noStroke();
 
-  randomSeed(actRandomSeed);
+  randomSeed(actRandomSeed); // Original Code from:https://github.com/generative-design/Code-Package-p5.js/blob/master/02_M/M_1_1_01/sketch.js
+  // The Nature of Code
+  // Example :M_1_1_01
+  //Modified by YU JEONG LEE
   beginShape();
   for (let x = 1; x < width; x += 10) {
     let y = (0, height);
