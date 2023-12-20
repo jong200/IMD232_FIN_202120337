@@ -14,7 +14,10 @@ function setup() {
 }
 
 function draw() {
-  dataPoint[dataPoint.length - 1] = random();
+  dataPoint[dataPoint.length - 1] = random(); // Original Code from:https://spctrm404.github.io/IMD232/src/w7/recording/step4/index.html //OO-SUNG SON (spctrm404)
+  // The Nature of Code
+  // Example w7: step4
+  //Modified by YU JEONG LEE
   background(50, 55, 100);
   noStroke();
   fill(0, 130, 164);
